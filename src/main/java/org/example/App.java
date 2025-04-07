@@ -13,12 +13,12 @@ public class App {
 
         while (!isExit) {
 
-            System.out.println("""
+            System.out.print("""
             1. login
             2. register
 
             0. exit
-            """);
+            =>\s""");
 
 
             switch (DB.scannerInt.nextInt()) {
