@@ -25,13 +25,14 @@ public class UserService {
                         System.out.println("...");
                     }
                 } else {
-                    System.out.println("Email ga jonatgan parolni kiriting!");
+                    System.out.print("Email ga jonatgan parolni kiriting: ");
                     String password = DB.scannerStr.nextLine();
                     if (testUser.getPassword().equals(password)) {
-                        System.out.println("Yangi parol ornating");
+                        System.out.print("Yangi parol ornating: ");
                         String helper = DB.scannerStr.nextLine();
                         testUser.setPassword(helper);
                         testUser.setActive(true);
+                        System.out.println("Welcome!");
                     }
                 }
             }
@@ -63,7 +64,7 @@ public class UserService {
         properties.put("mail.smtp.auth", "true");
 
         String username = "murodbee07@gmail.com";
-        String password = "irbxhfbnzkonchjt";
+        String password = "error";
 
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override
@@ -77,7 +78,7 @@ public class UserService {
         message.setSubject("Murod dan xat");
         message.setText("""
                 Assalamu Alaykum %s, saytimizga xush kelibsiz!
-                Iltimos akkauntizni active qilish uchun shu kodni kiriting %s
+                Iltimos akkauntizni active qilish uchun shu kodni kiriting %s.
                 """.formatted(user.getFullName(), user.getPassword()));
 
         message.setFrom(new InternetAddress(username));
