@@ -1,7 +1,0 @@
-package org.example.db;
-
-import org.example.entity.User;
-
-public class CurrentUsers {
-    public static User currentUser = null;
-}

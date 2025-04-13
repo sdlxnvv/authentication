@@ -1,6 +1,6 @@
-package org.example.db;
+package standardRegisterAndLogin.db;
 
-import org.example.entity.User;
+import standardRegisterAndLogin.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;

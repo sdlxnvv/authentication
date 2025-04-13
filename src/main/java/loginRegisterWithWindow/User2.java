@@ -1,6 +1,5 @@
 package org.example.entity;
 
-
 import lombok.*;
 
 import java.util.UUID;
@@ -11,7 +10,7 @@ import java.util.UUID;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User2 {
     private UUID id;
     private String fullName;
     private String email;

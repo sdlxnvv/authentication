@@ -1,8 +1,8 @@
-package org.example;
+package standardRegisterAndLogin;
 
 
-import org.example.db.DB;
-import org.example.service.UserService;
+import standardRegisterAndLogin.db.DB;
+import standardRegisterAndLogin.service.UserService;
 
 import javax.mail.MessagingException;
 

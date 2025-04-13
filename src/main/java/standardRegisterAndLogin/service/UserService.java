@@ -1,8 +1,8 @@
-package org.example.service;
+package standardRegisterAndLogin.service;
 
-import org.example.db.CurrentUsers;
-import org.example.db.DB;
-import org.example.entity.User;
+import standardRegisterAndLogin.db.CurrentUsers;
+import standardRegisterAndLogin.db.DB;
+import standardRegisterAndLogin.entity.User;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
